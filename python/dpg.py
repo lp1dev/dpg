@@ -67,7 +67,7 @@ def readable( password ):
     while x < len(password):
         human += password[x:x+3] + " "
         x += 3
-    print human
+    print human.strip()
 
 # Main
 
