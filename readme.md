@@ -42,7 +42,7 @@ OK, onto my argument. I disagree with two common concepts used by traditional pa
 
 When passwords are stored, they must be encrypted and then retrieved later when needed. Storage, of any type, is a burden. Users are required to backup stored passwords and synchronize them across devices and implement measures to protect the stored passwords or at least log access to the stored passwords for audit purposes. Unless backups occur regularly, if the encrypted password file becomes corrupt or is deleted, then all the passwords are lost.
 
-Users must also devise a "master password" to retrieve the encrypted passwords stored by the password management software. This "master password" is a weak point. If the "master password" is exposed, or there is a slight possibility of potential exposure, confidence in the passwords are lost immediately.
+Users must also devise a "master password" to retrieve the encrypted passwords stored by the password management software. This "master password" is a weak point. If the "master password" is exposed, or there is a slight possibility of potential exposure, confidence in the passwords are lost.
 
 My other concern with password storage is proper encryption. Are you sure the encryption used to store the passwords is implemented correctly? Has the encryption been externally validated? Some password management software is closed-source and proprietary and cannot be verified or validated in any way. Encryption is hard. [Even expert developers with many years of experience make mistakes](http://www.daemonology.net/blog/2011-01-18-tarsnap-critical-security-bug.html) that render encryption weak or in some cases almost useless. 
 
