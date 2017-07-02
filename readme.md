@@ -38,7 +38,7 @@ If after reading this you still wish to use a traditional password manager, I su
 OK, onto my argument. I disagree with two common concepts used by traditional password managers:
 
   1. Password Storage
-  2. Web & Browser Integration
+  2. Remote Systems & Web Browser Integration
 
 When passwords are stored, they must be encrypted and then retrieved later when needed. Storage, of any type, is a burden. Users are required to backup stored passwords and synchronize them across devices and implement measures to protect the stored passwords or at least log access to the stored passwords for audit purposes. Also, unless backups occur regularly, if the encrypted password file becomes corrupt or is deleted, then all the passwords are lost and must be manually reset.
 
