@@ -45,7 +45,7 @@ When passwords are stored, they must be encrypted and then retrieved later when 
 
 Users must also devise a "master password" to retrieve the encrypted passwords stored by the password management software. This "master password" is a weak point. If the "master password" is exposed, or there is a slight possibility of potential exposure, confidence in the passwords are lost immediately.
 
-My other concern with password storage is proper encryption. Are you sure the encryption used to store the passwords is implemented correctly? Has the encryption been externally validated? Some password management software is closed-source and proprietary and cannot be verified or validated in any way. Encryption is hard. Even expert developers with many years of experience make mistakes that render encryption weak or in some cases almost useless. Even open-source, peer reviewed code, written and reviewed by well-respected experts may have subtle bugs when it comes to encryption.
+My other concern with password storage is proper encryption. Are you sure the encryption used to store the passwords is implemented correctly? Has the encryption been externally validated? Some password management software is closed-source and proprietary and cannot be verified or validated in any way. Encryption is hard. [Even expert developers with many years of experience make mistakes](http://www.daemonology.net/blog/2011-01-18-tarsnap-critical-security-bug.html) that render encryption weak or in some cases almost useless. 
 
 Now, for my second disagreement with traditional password managers. I believe that password management should only occur locally on end use devices, not on remote servers (aka "in the cloud") and not in the client web browser.
 
