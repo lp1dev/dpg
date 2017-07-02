@@ -55,13 +55,15 @@ Web browsers today have "everything but the kitchen sink" capabilities built-in 
 
 For the reasons listed above, I believe that the concepts of traditional password management software are fundamentally flawed and thus should not be a consideration when deciding on a secure password management solution.
 
-DPG addresses these flaws and allows users to have strong, memorable passwords (with measurable bit strength) that change frequently.
+DPG addresses these flaws. Here are the key design concepts.
 
-DPG does not store passwords, it only generates passwords when needed. Because of this, the need to backup, synchronize and properly encrypt passwords is entirely removed. This also eliminates the weak point of having a "master password" that immediately unlocks all of the other passwords. There is nothing to audit access to and nothing to become lost, stolen or corrupt either. No storage means you have none of the problems associated with traditional password management storage.
+  * DPG does not store passwords, it only generates passwords as needed. Because of this, the need to backup, synchronize and properly encrypt passwords is entirely removed. This eliminates the weak point of having a "master password" that immediately unlocks all of the other passwords. There is nothing to audit access to and nothing to become lost, stolen or corrupt. No storage means you have none of the problems associated with password management storage.
 
-Also, DPG only runs locally on end-use devices. It is a stand-alone application that does not rely on remote servers, or "the cloud", and it is not integrated into web browsers along with the numerous other browser "add-ons". DPG is also fully open-source and the passwords it generates can be verified and validated by other external programs.
+  * DPG only runs locally on end-use devices. It is a stand-alone application that does not rely on remote servers, or "the cloud", and it is not integrated into web browsers along with the numerous other browser "add-ons". 
 
-In conclusion, password managers are important, but they shouldn't be difficult to deal with or untrustworthy. DPG removes many of the traditional pain points and trust issues that I have experienced with traditional password management software. I hope you find it as useful as I do.
+  * DPG is open-source and the passwords it generates can be verified and validated by other implementations.
+
+In conclusion, password managers are important, but they shouldn't be difficult to deal with or untrustworthy. DPG removes many of the issues that I have experienced with traditional password management software. I hope you find it as useful as I have over the years.
 
 ## Notes
 
