@@ -1,6 +1,6 @@
-# dpg - Deterministic Password Generator
+# DPG - Deterministic Password Generator
 
-dpg is a deterministic password generator that does not store data or keep state. Its output is based purely on user input.
+DPG is a deterministic password generator that does not store data or keep state. Its output is based purely on user input.
 
 ## To Build C++ executable
 
@@ -52,17 +52,15 @@ Remote systems are outside the user's control and thus cannot be trusted with pa
 
 Web browsers today have "everything but the kitchen sink" capabilities built-in and are becoming more and more complex each year. They are turning into whole platforms that have browser plug-ins and extensions for every possible need known to man. While many of these add-ons are handy and useful, you should not trust these add-ons with password management. Browsers are just too complex and have far too much going on to trust them with password management.
 
-For the reasons listed above, I believe that the concepts of traditional password management software are fundamentally flawed and thus should not be a consideration when deciding on a secure password management solution.
-
 DPG addresses these flaws. Here are the key design concepts.
 
-  * DPG does not store passwords, it only generates passwords as needed. Because of this, the need to backup, synchronize and properly encrypt passwords is entirely removed. This eliminates the weak point of having a "master password" that immediately unlocks all of the other passwords. There is nothing to audit access to and nothing to become lost, stolen or corrupt. No storage means you have none of the problems associated with password management storage.
+  * DPG does not store passwords, it only generates passwords as needed. Because of this, the need to backup, synchronize and properly encrypt passwords is removed. This eliminates the weak point of having a "master password" that immediately unlocks all of the other passwords. There is nothing to audit access to and nothing to become lost, stolen or corrupt. No storage means you have none of the problems associated with password management storage.
 
-  * DPG only runs locally on end-use devices. It is a stand-alone application that does not rely on remote servers, or "the cloud", and it is not integrated into web browsers along with the numerous other browser "add-ons". 
+  * DPG only runs locally on end-use devices. It is a stand-alone application that does not rely on remote systems, and it is not integrated into web browsers along with numerous other browser "add-ons". 
 
   * DPG is open-source and the passwords it generates can be verified and validated by other implementations.
 
-In conclusion, password managers are important, but they shouldn't be difficult to deal with or untrustworthy. DPG removes many of the issues that I have experienced with traditional password management software. I hope you find it as useful as I have over the years.
+Password managers are important, but they shouldn't be difficult to deal with or untrustworthy. DPG removes many of the issues that I have experienced with traditional password management software. I hope you find it as useful as I have over the years.
 
 ## Notes
 
