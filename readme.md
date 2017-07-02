@@ -40,7 +40,7 @@ OK, onto my argument. I disagree with two common concepts used by traditional pa
   1. Password Storage
   2. Remote Systems & Web Browser Integration
 
-When passwords are stored, they must be encrypted and then retrieved later when needed. Storage, of any type, is a burden. Users are required to backup stored passwords and synchronize them across devices and implement measures to protect the stored passwords or at least log access to the stored passwords for audit purposes. Also, unless backups occur regularly, if the encrypted password file becomes corrupt or is deleted, then all the passwords are lost and must be manually reset.
+When passwords are stored, they must be encrypted and then retrieved later when needed. Storage, of any type, is a burden. Users are required to backup stored passwords and synchronize them across devices and implement measures to protect the stored passwords or at least log access to the stored passwords for audit purposes. Unless backups occur regularly, if the encrypted password file becomes corrupt or is deleted, then all the passwords are lost.
 
 Users must also devise a "master password" to retrieve the encrypted passwords stored by the password management software. This "master password" is a weak point. If the "master password" is exposed, or there is a slight possibility of potential exposure, confidence in the passwords are lost immediately.
 
