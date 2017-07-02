@@ -36,7 +36,7 @@
 
 
 const std::string do_PBKDF2( const std::string& sentence, const std::string& word )
-{	
+{   
     // Use sentence and word as input to PBKDF2
     // Return hex encoded PBKDF2
     char random_bytes[64];
@@ -59,13 +59,13 @@ const std::string do_PBKDF2( const std::string& sentence, const std::string& wor
                  32768,
                  0 );
 
-	// Hex Encode
-	std::string result;
-	CryptoPP::HexEncoder hexencoder;
-	hexencoder.Attach( new CryptoPP::StringSink( result ) );
-	hexencoder.Put( (byte*)random_bytes, sizeof(random_bytes) );
-	hexencoder.MessageEnd();
-	
+    // Hex Encode
+    std::string result;
+    CryptoPP::HexEncoder hexencoder;
+    hexencoder.Attach( new CryptoPP::StringSink( result ) );
+    hexencoder.Put( (byte*)random_bytes, sizeof(random_bytes) );
+    hexencoder.MessageEnd();
+    
     return result;
 }
 
@@ -77,10 +77,10 @@ const std::string get_passwd( const std::string& sentence, const std::string& wo
 
     // hex decode
     std::string raw_bytes;
-	CryptoPP::HexDecoder hexdecoder;
-	hexdecoder.Attach( new CryptoPP::StringSink( raw_bytes ) );
+    CryptoPP::HexDecoder hexdecoder;
+    hexdecoder.Attach( new CryptoPP::StringSink( raw_bytes ) );
     hexdecoder.Put( (byte*)PBKDF2_hex.c_str(), PBKDF2_hex.size() );
-	hexdecoder.MessageEnd();
+    hexdecoder.MessageEnd();
 
     std::map<int, std::string> lower_map   = lower();
     std::map<int, std::string> upper_map   = upper();
@@ -157,10 +157,10 @@ const std::string get_passphrase( const std::string& sentence, const std::string
 
     // hex decode
     std::string raw_bytes;
-	CryptoPP::HexDecoder hexdecoder;
-	hexdecoder.Attach( new CryptoPP::StringSink( raw_bytes ) );
+    CryptoPP::HexDecoder hexdecoder;
+    hexdecoder.Attach( new CryptoPP::StringSink( raw_bytes ) );
     hexdecoder.Put( (byte*)PBKDF2_hex.c_str(), PBKDF2_hex.size() );
-	hexdecoder.MessageEnd();
+    hexdecoder.MessageEnd();
 
     std::map<int, std::string> word_map    = words();
     std::map<int, std::string> upper_map   = upper();

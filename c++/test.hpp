@@ -62,13 +62,13 @@ void run_tests()
     std::string spaced_passphrase;
     std::string PBKDF2;
 
-	// Test 0
+    // Test 0
     PBKDF2                = do_PBKDF2( ts0, tw0 );
-	big_password          = get_passwd( ts0, tw0, 24 );
+    big_password          = get_passwd( ts0, tw0, 24 );
     big_spaced_password   = readable(big_password);
-	small_password        = get_passwd( ts0, tw0, 12 );
+    small_password        = get_passwd( ts0, tw0, 12 );
     small_spaced_password = readable(small_password);
-	passphrase            = get_passphrase( ts0, tw0, 7 );
+    passphrase            = get_passphrase( ts0, tw0, 7 );
     spaced_passphrase     = readable(passphrase);
 
     if ( PBKDF2 != test0_PBKDF2 )
@@ -122,11 +122,11 @@ void run_tests()
 
     // Test 1
     PBKDF2                = do_PBKDF2( ts1, tw1 );
-	big_password          = get_passwd( ts1, tw1, 24 );
+    big_password          = get_passwd( ts1, tw1, 24 );
     big_spaced_password   = readable(big_password);
-	small_password        = get_passwd( ts1, tw1, 12 );
+    small_password        = get_passwd( ts1, tw1, 12 );
     small_spaced_password = readable(small_password);
-	passphrase            = get_passphrase( ts1, tw1, 7 );
+    passphrase            = get_passphrase( ts1, tw1, 7 );
     spaced_passphrase     = readable(passphrase);
 
     if ( PBKDF2 != test1_PBKDF2 )
@@ -180,11 +180,11 @@ void run_tests()
 
     // Test 2
     PBKDF2                = do_PBKDF2( ts2, tw2 );
-	big_password          = get_passwd( ts2, tw2, 24 );
+    big_password          = get_passwd( ts2, tw2, 24 );
     big_spaced_password   = readable(big_password);
-	small_password        = get_passwd( ts2, tw2, 12 );
+    small_password        = get_passwd( ts2, tw2, 12 );
     small_spaced_password = readable(small_password);
-	passphrase            = get_passphrase( ts2, tw2, 7 );
+    passphrase            = get_passphrase( ts2, tw2, 7 );
     spaced_passphrase     = readable(passphrase);
 
     if ( PBKDF2 != test2_PBKDF2 )

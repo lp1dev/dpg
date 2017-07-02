@@ -41,16 +41,16 @@ int main( int argc, char* argv[] )
     const std::string sentence = argv[1];
     const std::string word = argv[2];
 
-	// Big
-	const std::string big_password = get_passwd( sentence, word, 24 );
+    // Big
+    const std::string big_password = get_passwd( sentence, word, 24 );
     const std::string big_spaced_password = readable(big_password);
-	
-	// Small
-	const std::string small_password = get_passwd( sentence, word, 12 );
+    
+    // Small
+    const std::string small_password = get_passwd( sentence, word, 12 );
     const std::string small_spaced_password = readable(small_password);
-	
-	// Words
-	const std::string passphrase = get_passphrase( sentence, word, 7 );
+    
+    // Words
+    const std::string passphrase = get_passphrase( sentence, word, 7 );
     const std::string spaced_passphrase = readable(passphrase);
 
     std::cout << "\n-----BEGIN DPG MESSAGE-----\n";
@@ -66,5 +66,5 @@ int main( int argc, char* argv[] )
     std::cout << "------END DPG MESSAGE------\n\n";
 
     return 0;
-}	
+}   
 
