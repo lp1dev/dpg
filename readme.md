@@ -24,16 +24,16 @@ $ dpg "The sentence" word
 
 ## Usage Recommendations
 
-    * Use the same sentence everywhere. Commit it to memory.
-    * Use a different word for different sites. Be consistent with case (e.g. google, facebook, twitter, etc.)
-    * If you need to change all of your passwords, change the sentence.
-    * If you need to change one site password, change the word.
+  * Use the same sentence everywhere. Commit it to memory.
+  * Use a different word for different sites. Be consistent with case (e.g. google, facebook, twitter, etc.)
+  * If you need to change all of your passwords, change the sentence.
+  * If you need to change one site password, change the word.
 
 ## Some background
 
 I wrote DPG because I sometimes work in highly audited/regulated environments and I needed a way to recall dozens of complex passwords that change frequently and I disagree with the core concepts of most traditional password management software in use today. I believe a few of these programs are OK and I've used several of them and encouraged others to do so, but after trying to make traditional password managers work for several years, I gave up and decided that their approach is fundamentally flawed.
 
-And by the way, if after reading this you still wish to use a traditional password manager, I suggest that you put your passwords into a plain text file and symmetrically encrypt it with GPG or use Password Safe. I have no relationship with either project.
+And by the way, if after reading this you still wish to use a traditional password manager, I suggest that you put your passwords into a plain text file and symmetrically encrypt it with [GPG](https://www.gnupg.org/) or use [Password Safe](https://pwsafe.org/). I have no relationship with either project.
 
 OK, onto my argument. I disagree with two common concepts used by traditional 
 password managers:
