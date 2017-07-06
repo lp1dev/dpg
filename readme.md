@@ -29,7 +29,7 @@ $ dpg "The sentence" word
   * If you need to change all of your passwords, change the sentence.
   * If you need to change one site password, change the word.
 
-## Screenshot of Java implementation of dpg
+## Screenshot of Java GUI implementation
 
   ![Screenshot](https://github.com/w8rbt/dpg/tree/master/java/pics/dpg.png?raw=true)
 
