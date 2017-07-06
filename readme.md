@@ -31,7 +31,7 @@ $ dpg "The sentence" word
 
 ## Screenshot of Java GUI implementation
 
-  ![Screenshot](https://github.com/w8rbt/dpg/tree/master/java/pics/dpg.png?raw=true)
+  ![Screenshot](java/pics/dpg.png?raw=true)
 
 ## Why traditional password managers are flawed
 
