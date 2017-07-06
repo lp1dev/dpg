@@ -29,6 +29,10 @@ $ dpg "The sentence" word
   * If you need to change all of your passwords, change the sentence.
   * If you need to change one site password, change the word.
 
+## Screenshot of Java implementation of dpg
+
+  ![Image of dpg](https://github.com/w8rbt/dpg/tree/master/java/pics/dpg.png)
+
 ## Why traditional password managers are flawed
 
 I wrote DPG because I sometimes work in highly audited/regulated environments and I needed a way to recall dozens of complex passwords that change frequently and I disagree with the core concepts of most traditional password management software in use today. I believe that their approach is fundamentally flawed.
