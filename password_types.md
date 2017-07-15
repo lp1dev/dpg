@@ -1,4 +1,4 @@
-Types of Passwords
+## Types of Passwords
 
 Understanding basic password types will help you devise a strong password management strategy for all of your accounts. In general and at a high-level, there are two basic types of passwords:
 
