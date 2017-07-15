@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 """ Python 2.7 script that implements DPG """
 
@@ -76,7 +76,7 @@ DEBUG = False
 SENTENCE = getpass.getpass(b"Enter the sentence: ")
 WORD = getpass.getpass(b"Enter the word: ")
 
-PBKDF2 = hashlib.pbkdf2_hmac('sha512', SENTENCE, WORD, 32768, dklen=64)
+PBKDF2 = hashlib.pbkdf2_hmac('sha1', SENTENCE, WORD, 32768, dklen=64)
 PBKDF2_HEX = binascii.hexlify(PBKDF2)
 
 if DEBUG:
