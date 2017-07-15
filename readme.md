@@ -68,5 +68,6 @@ Password managers are important, but they shouldn't be difficult to deal with or
 
 ## Notes
 
-DPG is based on my earlier SHA1_Pass software in 2009.
+  * DPG is based on my earlier SHA1_Pass software in 2009.
+  * The C++ implementation is intended for testing and validation.
 
