@@ -7,6 +7,9 @@ import binascii
 import getpass
 import hashlib
 import Queue
+import os
+import subprocess
+
 
 # Local Imports
 import jars
@@ -99,7 +102,14 @@ if DEBUG:
     print jars.upper().values()
     print jars.words().values()
 
-print get_big()
+read, write = os.pipe()
+os.write(write, get_big())
+os.close(write)
+
+subprocess.check_call(['xclip',  '-selection',  'clipboard'], stdin=read)
+    
+#pyperclip.copy(get_big())
+#print pyperclip.paste()
 #print get_small()
 #print get_passphrase()
 
