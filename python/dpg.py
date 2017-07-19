@@ -74,6 +74,9 @@ def readable( password ):
 DEBUG = False
 
 SENTENCE = getpass.getpass(b"Enter the sentence: ")
+SENTENCE2 = getpass.getpass(b"Confirm the sentence: ")
+if SENTENCE != SENTENCE2:
+    exit("The sentences are not the same")
 WORD = raw_input(b"Enter the word: ")
 
 PBKDF2 = hashlib.pbkdf2_hmac('sha1', SENTENCE, WORD, 32768, dklen=64)
@@ -96,16 +99,15 @@ if DEBUG:
     print jars.upper().values()
     print jars.words().values()
 
-print "\n-----BEGIN DPG MESSAGE-----"
 print get_big()
-print get_small()
-print get_passphrase()
+#print get_small()
+#print get_passphrase()
 
-print "---------------------------"
-print "---- Human Readable -------"
-print "---------------------------"
-readable( get_big() )
-readable( get_small() )
-readable( get_passphrase() )
-print "------END DPG MESSAGE------\n"
+#print "---------------------------"
+#print "---- Human Readable -------"
+#print "---------------------------"
+#readable( get_big() )
+#readable( get_small() )
+#readable( get_passphrase() )
+#print "------END DPG MESSAGE------\n"
 
